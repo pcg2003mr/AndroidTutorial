@@ -1,12 +1,17 @@
 package com.example.tutorialapp;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import com.example.tutorialapp.intents.IntentExplicito;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,5 +25,23 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        //Obtener boton o elemento de la vista
+        Button btnIntent = findViewById(R.id.botonIntent);
+
+        //Add listener
+        btnIntent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //Crear intent explicito
+                Intent intentExplicito = new Intent(MainActivity.this, IntentExplicito.class);
+
+                //Iniciar Activida
+                startActivity(intentExplicito);
+            }
+        });
+
+
+
     }
 }
