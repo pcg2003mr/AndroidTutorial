@@ -2,6 +2,7 @@ package com.example.tutorialapp.intents;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -23,6 +24,9 @@ public class IntentImplicito extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        TextView textViewComida = findViewById(R.id.textViewComida);
+        TextView textViewComida = findViewById(R.id.textViewBebida);
 
         Bundle extras = getIntent().getExtras();
 
