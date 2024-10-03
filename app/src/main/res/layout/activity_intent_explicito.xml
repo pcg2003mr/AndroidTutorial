@@ -7,4 +7,72 @@
     android:layout_height="match_parent"
     tools:context=".intents.IntentExplicito">
 
+    <Button
+        android:id="@+id/BotonActividad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="431dp"
+        android:backgroundTint="#C30D0D"
+        android:text="ACTIVIDAD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextComida"
+        android:layout_width="259dp"
+        android:layout_height="62dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="comida"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.881"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.089" />
+
+    <EditText
+        android:id="@+id/editTextBebida"
+        android:layout_width="249dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="28dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="bebida"
+        app:layout_constraintBottom_toTopOf="@+id/BotonActividad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.798" />
+
+    <TextView
+        android:id="@+id/textViewComida"
+        android:layout_width="96dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="52dp"
+        android:text="COMIDA"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewBebida"
+        app:layout_constraintEnd_toStartOf="@+id/editTextComida"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.827" />
+
+    <TextView
+        android:id="@+id/textViewBebida"
+        android:layout_width="72dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="524dp"
+        android:text="BEBIDA"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editTextBebida"
+        app:layout_constraintHorizontal_bias="0.258"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

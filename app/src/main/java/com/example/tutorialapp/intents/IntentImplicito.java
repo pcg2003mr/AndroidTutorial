@@ -1,6 +1,7 @@
 package com.example.tutorialapp.intents;
 
 import android.os.Bundle;
+import android.util.Log;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -22,5 +23,16 @@ public class IntentImplicito extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        Bundle extras = getIntent().getExtras();
+
+        String textoPrueba = extras.getString("Prueba");
+        String comida = extras.getString("Comida");
+        String bebida = extras.getString("Bebida");
+
+
+
+
+        Log.d("Prueba", textoPrueba);
     }
 }
